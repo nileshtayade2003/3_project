@@ -106,7 +106,7 @@ View my notebook with detailed steps here: [3_Skills_Trend](3_Skills_Trend.ipynb
 
 from matplotlib.ticker import PercentFormatter
 
-df_plot = df_DA_US_percent.iloc[:, :5]
+df_plot = df_DA_India_percent.iloc[:, :5]
 sns.lineplot(data=df_plot, dashes=False, legend='full', palette='tab10')
 
 plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
@@ -117,13 +117,18 @@ plt.show()
 
 ### Results
 
-![Trending Top Skills for Data Analysts in the US](images/Trending_Top_Skills_for_Data_Analysts_in_the_US.png)  
-*Bar graph visualizing the trending top skills for data analysts in the US in 2023.*
+![Trending Top Skills for Data Analysts in the India](images/Trending_Top_Skills_for_Data_Analysts_in_the_India.png)  
+*Line graph visualizing the trending top skills for data analysts in the india in 2023.*
 
 ### Insights:
-- SQL remains the most consistently demanded skill throughout the year, although it shows a gradual decrease in demand.
-- Excel experienced a significant increase in demand starting around September, surpassing both Python and Tableau by the end of the year.
-- Both Python and Tableau show relatively stable demand throughout the year with some fluctuations but remain essential skills for data analysts. Power BI, while less demanded compared to the others, shows a slight upward trend towards the year's end.
+- SQL Dominates:
+SQL consistently remains the most in-demand skill, with its likelihood in job postings hovering around 50–55% throughout the year.
+
+- Python and Excel Compete Closely:
+Python and Excel show fluctuating trends but generally stay within the 35–40% range, with Python slightly ahead mid-year (May–July).
+
+- Rising Demand for BI Tools:
+Tableau and Power BI are comparatively lower in demand (20–30% range), but Power BI shows a gradual increase toward the end of the year, indicating growing interest.
 
 ## 3. How well do jobs and skills pay for Data Analysts?
 
