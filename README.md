@@ -211,6 +211,8 @@ View my notebook with detailed steps here: [5_Optimal_Skills](5_Optimal_Skills.i
 
 #### Visualize Data
 
+1. Normal visualization
+
 ```python
 from adjustText import adjust_text
 import matplotlib.pyplot as plt
@@ -219,25 +221,7 @@ plt.scatter(df_DA_skills_high_demand['skill_percent'], df_DA_skills_high_demand[
 plt.show()
 
 ```
-
-#### Results
-
-![Most Optimal Skills for Data Analysts in the US](images/Most_Optimal_Skills_for_Data_Analysts_in_the_US.png)    
-*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the US.*
-
-#### Insights:
-
-- The skill `Oracle` appears to have the highest median salary of nearly $97K, despite being less common in job postings. This suggests a high value placed on specialized database skills within the data analyst profession.
-
-- More commonly required skills like `Excel` and `SQL` have a large presence in job listings but lower median salaries compared to specialized skills like `Python` and `Tableau`, which not only have higher salaries but are also moderately prevalent in job listings.
-
-- Skills such as `Python`, `Tableau`, and `SQL Server` are towards the higher end of the salary spectrum while also being fairly common in job listings, indicating that proficiency in these tools can lead to good opportunities in data analytics.
-
-### Visualizing Different Techonologies
-
-Let's visualize the different technologies as well in the graph. We'll add color labels based on the technology (e.g., {Programming: Python})
-
-#### Visualize Data
+2. Colored Visualization
 
 ```python
 from matplotlib.ticker import PercentFormatter
@@ -257,16 +241,19 @@ plt.show()
 
 #### Results
 
-![Most Optimal Skills for Data Analysts in the US with Coloring by Technology](images/Most_Optimal_Skills_for_Data_Analysts_in_the_US_with_Coloring_by_Technology.png)  
-*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the US with color labels for technology.*
+![Most Optimal Skills for Data Analysts in the India](images/Most_Optimal_Skills_for_Data_Analysts_in_the_India.png)    
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India.*
 
 #### Insights:
 
-- The scatter plot shows that most of the `programming` skills (colored blue) tend to cluster at higher salary levels compared to other categories, indicating that programming expertise might offer greater salary benefits within the data analytics field.
+- Best Pay vs. Low Demand:
+Tools like Looker, PowerPoint, and Spark offer high median salaries (~$110K) but are listed in only ~10–15% of job postings, showing high ROI for niche skills.
 
-- The database skills (colored orange), such as Oracle and SQL Server, are associated with some of the highest salaries among data analyst tools. This indicates a significant demand and valuation for data management and manipulation expertise in the industry.
+- High Demand but Lower Pay:
+SQL, Python, and Excel are the most common in job postings (35–50%) but offer moderate median salaries (~$95K–$100K), suggesting they are foundational but less differentiating.
 
-- Analyst tools (colored green), including Tableau and Power BI, are prevalent in job postings and offer competitive salaries, showing that visualization and data analysis software are crucial for current data roles. This category not only has good salaries but is also versatile across different types of data tasks.
+- Strategic Skills to Learn:
+Power BI and Tableau strike a good balance—decent demand (20–25%) and high median salaries (~$105K–$110K)—making them optimal choices for job seekers looking to upskill.
 
 # What I Learned
 
@@ -281,7 +268,7 @@ Throughout this project, I deepened my understanding of the data analyst job mar
 
 This project provided several general insights into the data job market for analysts:
 
-- **Skill Demand and Salary Correlation**: There is a clear correlation between the demand for specific skills and the salaries these skills command. Advanced and specialized skills like Python and Oracle often lead to higher salaries.
+- **Skill Demand and Salary Correlation**: There is a clear correlation between the demand for specific skills and the salaries these skills command. Advanced and specialized skills like power bi, tableau often lead to higher salaries.
 - **Market Trends**: There are changing trends in skill demand, highlighting the dynamic nature of the data job market. Keeping up with these trends is essential for career growth in data analytics.
 - **Economic Value of Skills**: Understanding which skills are both in-demand and well-compensated can guide data analysts in prioritizing learning to maximize their economic returns.
 
